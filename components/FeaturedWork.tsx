@@ -1,21 +1,20 @@
 import Link from "next/link";
 import { getFeaturedCaseStudies } from "@/content/case-studies";
 import { CaseStudyCard } from "./CaseStudyCard";
+import { DomainNav } from "./DomainNav";
 
 export function FeaturedWork() {
   const featured = getFeaturedCaseStudies();
 
   return (
     <section className="px-6 py-16">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto layout-max w-full">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
             <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
               Selected work
             </h2>
-            <p className="mt-2 text-muted">
-              Fintech, healthcare, agtech, open source, and more.
-            </p>
+            <DomainNav className="mt-4" />
           </div>
           <Link
             href="/work"

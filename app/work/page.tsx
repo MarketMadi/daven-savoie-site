@@ -5,6 +5,7 @@ import {
   type CaseStudyDomain,
 } from "@/content/case-studies";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
+import { DomainNav } from "@/components/DomainNav";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -34,10 +35,11 @@ export default function WorkPage() {
 
   return (
     <div className="px-6 py-16">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto layout-max w-full">
         <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
           Work
         </h1>
+        <DomainNav className="mt-6" />
         <p className="mt-4 max-w-2xl text-lg text-muted">
           Work grouped by domain. Healthcare and agtech contracts are anonymised.
           Everything else is named.

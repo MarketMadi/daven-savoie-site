@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="mt-12 space-y-6">
           <a
             href={`mailto:${site.email}?subject=Contract%20enquiry`}
-            className="flex items-center justify-between rounded-2xl border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:bg-surface-hover"
+            className="flex items-center justify-between rounded-theme-card border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:bg-surface-hover"
           >
             <div>
               <p className="font-display font-semibold">Email</p>
@@ -34,7 +34,7 @@ export default function ContactPage() {
             href={site.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between rounded-2xl border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:bg-surface-hover"
+            className="flex items-center justify-between rounded-theme-card border border-border bg-surface p-6 transition-all hover:border-accent/30 hover:bg-surface-hover"
           >
             <div>
               <p className="font-display font-semibold">GitHub</p>

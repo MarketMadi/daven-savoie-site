@@ -5,12 +5,12 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
   return (
     <Link
       href={`/work/${study.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-accent/30 hover:bg-surface-hover"
+      className="group relative flex flex-col overflow-hidden rounded-theme-card border border-border bg-surface transition-all duration-300 hover:border-accent/30 hover:bg-surface-hover"
     >
       <div className="card-shine pointer-events-none absolute inset-0" />
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-3 flex items-center justify-between gap-2">
-          <span className="rounded-full border border-border bg-background/50 px-2.5 py-0.5 text-xs text-muted">
+          <span className="rounded-theme-full border border-border bg-background/50 px-2.5 py-0.5 text-xs text-muted">
             {study.domainLabel}
           </span>
           {study.period && (

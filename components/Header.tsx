@@ -10,7 +10,7 @@ const nav = [
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex layout-max w-full items-center justify-between px-6 py-4">
         <Link
           href="/"
           className="font-display text-lg font-semibold tracking-tight transition-colors hover:text-accent"
@@ -30,7 +30,7 @@ export function Header() {
           ))}
           <a
             href={`mailto:${site.email}`}
-            className="hidden rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent transition-all hover:border-accent hover:bg-accent/20 sm:inline-block"
+            className="hidden rounded-theme-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent transition-all hover:border-accent hover:bg-accent/20 sm:inline-block"
           >
             Get in touch
           </a>

@@ -1,8 +1,7 @@
 export const site = {
   name: "Daven Savoie",
   title: "Senior DevOps Engineer",
-  tagline:
-    "I fix legacy infra, automate deployments, and ship dev tools for healthcare, agtech, fintech, and AI.",
+  tagline: "I ship dev tools, automate deployments and fix legacy infra.",
   heroSubtext:
     "Cut deploy times 80%. Redeployed decade-old healthcare stacks. Solo mainnet launch. Open-source tooling in production.",
   email: "ace.costa@proton.me",
