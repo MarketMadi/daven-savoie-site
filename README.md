@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# daven-savoie-site
 
-## Getting Started
+Personal portfolio for **Daven Savoie** — Senior DevOps Engineer. Achievements grouped by domain, built to land contract clients.
 
-First, run the development server:
+**Live:** deploy to Vercel or GitHub Pages (static export enabled).
+
+## Stack
+
+- Next.js 16 (App Router, static export)
+- Tailwind CSS 4
+- TypeScript
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # outputs to out/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+content/
+  case-studies.ts   # All work — edit here to add projects
+  site.ts           # Name, links, skills, stats
+app/
+  page.tsx          # Homepage
+  work/             # Work index + case study pages
+  about/
+  contact/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Content rules
 
-## Learn More
+- **Named:** Bitnomi, CivKit, Podmonkey, Macrocosmos, FreedomTech, Sonic Labs, Cion Data
+- **Anonymised to sector:** Kure → Healthcare SaaS, AgSpace/Origin Digital → AgTech Platform
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Push to GitHub and import the repo — zero config.
 
-## Deploy on Vercel
+### GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+# Publish the out/ directory to gh-pages branch or use actions
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Set `basePath` in `next.config.ts` if using a project URL (`username.github.io/repo-name`).
+
+## License
+
+MIT

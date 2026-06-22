@@ -1,0 +1,36 @@
+export const site = {
+  name: "Daven Savoie",
+  title: "Senior DevOps Engineer",
+  tagline:
+    "I modernise legacy platforms, automate infrastructure, and ship developer tooling — across healthcare, agtech, fintech, and AI.",
+  email: "ace.costa@proton.me",
+  github: "https://github.com/MarketMadi",
+  location: "Available for remote contract work",
+  stats: [
+    { value: "5+", label: "years DevOps" },
+    { value: "80%", label: "deploy time cuts" },
+    { value: "7", label: "microservices modernised" },
+    { value: "4", label: "cloud providers shipped" },
+  ],
+  skills: [
+    "Kubernetes",
+    "AWS",
+    "GCP",
+    "Terraform",
+    "Docker",
+    "CI/CD",
+    "GitHub Actions",
+    "Ansible",
+    "TypeScript",
+    "Python",
+    "Rust",
+    "Go",
+    "Prometheus",
+    "Grafana",
+  ],
+  interests: [
+    "Off-trail running — completed Lewa Marathon 2022 (1,700m elevation, 35°C+, 6h30)",
+    "Chess and robotics",
+    "STEM education — built a Bluetooth matatu project inspired by Kenya's bus culture",
+  ],
+} as const;
