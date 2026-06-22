@@ -14,7 +14,7 @@ export function FeaturedWork() {
               Selected work
             </h2>
             <p className="mt-2 text-muted">
-              By domain — fintech, healthcare, agtech, open source, and more.
+              Fintech, healthcare, agtech, open source, and more.
             </p>
           </div>
           <Link

@@ -39,8 +39,8 @@ export default function WorkPage() {
           Work
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted">
-          Achievements grouped by domain. Contract engagements in healthcare and
-          agtech are anonymised to sector — everything else is named.
+          Work grouped by domain. Healthcare and agtech contracts are anonymised.
+          Everything else is named.
         </p>
 
         <div className="mt-16 space-y-16">

@@ -38,10 +38,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "podmonkey",
     title: "Podmonkey",
-    subtitle: "Kubernetes cost estimator — compare AWS, GKE, AKS, and Hetzner from YAML",
+    subtitle: "Compare AWS, GKE, AKS, and Hetzner costs from Kubernetes YAML",
     domain: "open-source",
     domainLabel: "Open Source",
-    period: "2025 – Present",
+    period: "2025 to Present",
     featured: true,
     metrics: [
       { value: "4", label: "cloud providers" },
@@ -49,12 +49,12 @@ export const caseStudies: CaseStudy[] = [
       { value: "0", label: "cluster agents required" },
     ],
     summary:
-      "Built a full-stack open-source tool that turns Kubernetes manifests into monthly cost estimates. CLI, npm package, GitHub Action for PR comments, live web demo, and documented methodology aligned with OpenCost.",
+      "Open-source K8s cost estimator. Paste YAML, get monthly estimates. CLI, npm package, GitHub Action, live demo.",
     highlights: [
-      "Dual compute model: marginal resource rates and node-floor bin-packing across provider instance catalogs",
-      "GitHub Action with policy gates — max monthly USD, confidence thresholds, PR cost diffs",
-      "Helm chart input, kubectl cluster export, CronJob schedule parsing, storage class mapping",
-      "Pricing sheets validated in CI against public list prices with benchmark tests",
+      "Marginal and node-floor compute models across four cloud provider catalogs",
+      "GitHub Action with policy gates: max monthly spend, confidence thresholds, PR diffs",
+      "Helm charts, kubectl export, CronJob schedules, storage class mapping",
+      "Pricing sheets validated in CI against public list prices",
     ],
     stack: [
       "TypeScript",
@@ -82,10 +82,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "civkit",
     title: "CivKit",
-    subtitle: "Decentralized P2P marketplace — solo lead engineer, mainnet launch",
+    subtitle: "Decentralized P2P marketplace. Solo lead. Mainnet launch.",
     domain: "decentralized",
     domainLabel: "Decentralized Systems",
-    period: "Jan 2024 – Jan 2025",
+    period: "Jan 2024 to Jan 2025",
     featured: true,
     metrics: [
       { value: "Solo", label: "end-to-end delivery" },
@@ -93,12 +93,12 @@ export const caseStudies: CaseStudy[] = [
       { value: "Seconds", label: "deploy to mainnet" },
     ],
     summary:
-      "Implemented the CivKit white paper from scratch in TypeScript — PGP chat, Lightning escrow, and Nostr integrations. Designed microservices with Docker and automation to regtest, signet, and mainnet.",
+      "Built CivKit from the white paper in TypeScript. PGP chat, Lightning escrow, Nostr. Docker microservices on regtest, signet, and mainnet.",
     highlights: [
-      "Built the entire platform spec from the white paper as sole developer",
-      "Automated deployment pipelines pushing updates to mainnet within seconds",
-      "Microservices architecture with Docker across regtest, signet, and mainnet environments",
-      "Handed over to local P2P traders for independent operation after mainnet launch",
+      "Sole developer. White paper to production.",
+      "Deploy pipeline pushes to mainnet in seconds",
+      "Microservices across regtest, signet, and mainnet",
+      "Handed off to local P2P traders after launch",
     ],
     stack: [
       "TypeScript",
@@ -113,10 +113,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "bitnomi",
     title: "Bitnomi",
-    subtitle: "Bitcoin trading infrastructure and mobile wallet platform",
+    subtitle: "Bitcoin trading API and Flutter mobile wallet",
     domain: "fintech",
     domainLabel: "Fintech & Bitcoin",
-    period: "Jan 2025 – Present",
+    period: "Jan 2025 to Present",
     featured: true,
     metrics: [
       { value: "API", label: "trading & swaps" },
@@ -124,12 +124,12 @@ export const caseStudies: CaseStudy[] = [
       { value: "Mobile", label: "Flutter wallet app" },
     ],
     summary:
-      "DevOps and infrastructure for a Bitcoin financial platform — trading API, wallet functionality, containerized deployments, and a Flutter mobile app with BTC and USDT flows.",
+      "DevOps and infra for a Bitcoin platform: trading API, wallet, containerized deploys, Flutter app with BTC and USDT flows.",
     highlights: [
-      "Designed and deployed a financial trading API with Docker, enabling wallet and swap functionality",
-      "Automated deployment pipelines with containerization and CI/CD, reducing errors and accelerating releases",
-      "Created developer documentation and runbooks for cross-team collaboration and onboarding",
-      "Mobile app development — Flutter wallet with send/receive flows for BTC and USDT",
+      "Trading API on Docker with wallet and swap functionality",
+      "CI/CD pipelines cutting release errors and cycle time",
+      "Developer docs and runbooks for faster onboarding",
+      "Flutter wallet with BTC and USDT send/receive",
     ],
     stack: [
       "JavaScript",
@@ -144,10 +144,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "healthcare-platform",
     title: "Healthcare SaaS Platform",
-    subtitle: "Legacy modernisation — first redeploy in 10+ years",
+    subtitle: "First redeploy of a 10-year legacy stack",
     domain: "healthcare",
     domainLabel: "Healthcare",
-    period: "Jan 2023 – Jan 2024",
+    period: "Jan 2023 to Jan 2024",
     featured: true,
     metrics: [
       { value: "7", label: "microservices redeployed" },
@@ -155,12 +155,12 @@ export const caseStudies: CaseStudy[] = [
       { value: "100%", label: "critical metric logging" },
     ],
     summary:
-      "Contract engagement redeploying a decade-old healthcare codebase comprising seven microservices — the first full redeployment since original creation.",
+      "Contract role. Redeployed seven microservices from a decade-old healthcare codebase. First full redeploy since launch.",
     highlights: [
-      "Redeployed 10+ year legacy codebase with 7 microservices to modern infrastructure",
-      "Implemented comprehensive monitoring achieving 100% logging of mission-critical metrics",
-      "Reduced slow database queries by approximately 80%",
-      "Upskilled team on Docker, AWS, and CI/CD — restore times from hours to minutes",
+      "7 microservices off a 10+ year legacy codebase onto modern infra",
+      "100% logging on mission-critical metrics",
+      "Slow queries down ~80%",
+      "Team upskilled on Docker, AWS, CI/CD. Restore times: hours to minutes",
     ],
     stack: [
       "AWS",
@@ -174,10 +174,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "agtech-platform",
     title: "AgTech Platform",
-    subtitle: "Self-service data pipelines and automated crop intelligence",
+    subtitle: "Self-service data pipelines and crop intelligence automation",
     domain: "agtech",
     domainLabel: "AgTech & Farming",
-    period: "Jul 2020 – Mar 2023",
+    period: "Jul 2020 to Mar 2023",
     featured: true,
     metrics: [
       { value: "Days→Min", label: "data self-service" },
@@ -185,12 +185,12 @@ export const caseStudies: CaseStudy[] = [
       { value: "2nd line", label: "support automated" },
     ],
     summary:
-      "DevOps engineer for a UK farming-sector platform — automating soil health, crop health, and moisture reporting while improving security posture and enabling account manager self-service.",
+      "DevOps for a UK farming platform. Automated soil, crop, and moisture reporting. Self-service data for account managers. Security score up 11 points.",
     highlights: [
-      "Deployed AWS Lambda scripts enabling account managers to self-serve data requirements — days to minutes",
-      "Automated 2nd-line support functions including soil health, crop health, and moisture reports from internal and third-party data sources",
-      "Improved application security and built a culture of cybersecurity — score from 52 to 63 points",
-      "Focused team capacity on infrastructure improvements by eliminating repetitive manual work",
+      "AWS Lambda self-service for account managers. Days to minutes.",
+      "Automated 2nd-line support: soil health, crop health, moisture reports",
+      "Cybersecurity score 52 to 63",
+      "Freed the team from repetitive manual work",
     ],
     stack: [
       "AWS",
@@ -204,10 +204,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "ai-ml-deployment",
     title: "AI Model Production Deployment",
-    subtitle: "15B-parameter model to production with distributed training pipeline",
+    subtitle: "15B-parameter model to production",
     domain: "ai-ml",
     domainLabel: "AI / ML Infrastructure",
-    period: "Oct 2025 – Dec 2025",
+    period: "Oct 2025 to Dec 2025",
     featured: false,
     metrics: [
       { value: "15B", label: "parameter model" },
@@ -215,11 +215,11 @@ export const caseStudies: CaseStudy[] = [
       { value: "GitOps", label: "automated pipeline" },
     ],
     summary:
-      "Contract engagement deploying a large language model to production for an AI research company — distributed training pipeline, multi-environment architecture, and DevOps training for the engineering team.",
+      "Contract role at an AI research company. Shipped a 15B-parameter model to prod. Built the training pipeline and trained the eng team on DevOps.",
     highlights: [
-      "Deployed 15B-parameter AI model to production using GitHub Actions, Paperspace, and Ansible",
-      "Architected distributed training pipeline deployed across dev and prod environments",
-      "Provided DevOps training and established best practices for the engineering team",
+      "15B-parameter model to production via GitHub Actions, Paperspace, Ansible",
+      "Distributed training pipeline across dev and prod",
+      "DevOps training and best practices for the engineering team",
     ],
     stack: [
       "GitHub Actions",
@@ -232,10 +232,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "voca-tts",
     title: "VOCA TTS",
-    subtitle: "Android text-to-speech app on Zapstore — Kotlin, CI/CD, thousands in user donations",
+    subtitle: "Android TTS app on Zapstore. Kotlin. CI/CD. Paid donations.",
     domain: "platform",
     domainLabel: "Platform Engineering",
-    period: "May 2025 – Jul 2025",
+    period: "May 2025 to Jul 2025",
     featured: false,
     metrics: [
       { value: "Android", label: "Zapstore launch" },
@@ -243,22 +243,22 @@ export const caseStudies: CaseStudy[] = [
       { value: "CI/CD", label: "automated releases" },
     ],
     summary:
-      "Built and shipped VOCA TTS — an Android text-to-speech app published on Zapstore with a Kotlin codebase and automated CI/CD pipeline for releases.",
+      "Built and shipped VOCA TTS on Zapstore. Kotlin Android app with automated CI/CD for builds and store releases.",
     highlights: [
-      "Developed and launched VOCA TTS on Zapstore as a production Android app",
-      "Implemented CI/CD pipeline for automated builds and store deployments",
-      "Generated thousands in user donations after launch",
-      "Technical execution noted publicly by influencer Asmongold",
+      "Production Android TTS app on Zapstore",
+      "CI/CD for automated builds and deployments",
+      "Thousands in user donations post-launch",
+      "Noted publicly by influencer Asmongold",
     ],
     stack: ["Kotlin", "Android", "CI/CD", "Zapstore"],
   },
   {
     slug: "eks-automation",
     title: "Elastic Kubernetes Platform",
-    subtitle: "Four-environment EKS — deploy time from 1 hour to under 10 minutes",
+    subtitle: "4-environment EKS. Deploys under 10 minutes.",
     domain: "platform",
     domainLabel: "Platform Engineering",
-    period: "Jun 2022 – Oct 2022",
+    period: "Jun 2022 to Oct 2022",
     featured: false,
     metrics: [
       { value: "4", label: "environments" },
@@ -266,11 +266,11 @@ export const caseStudies: CaseStudy[] = [
       { value: "20%", label: "fewer post-release bugs" },
     ],
     summary:
-      "Developed a fully automated four-environment Elastic Kubernetes Cluster for a distributed systems startup, mentored an engineer into a permanent DevOps role, and tightened code review standards.",
+      "Automated a 4-environment EKS cluster for a distributed systems startup. Mentored an engineer into a permanent DevOps role.",
     highlights: [
-      "Fully automated 4-environment Elastic Kubernetes Cluster — deployment time from 1 hour to under 10 minutes",
-      "Trained software engineer into full-time DevOps role; still primary DevOps engineer 2+ years later",
-      "Code review participation reducing post-release bugs by approximately 20%",
+      "Deploy time: 1 hour to under 10 minutes",
+      "Trained a software engineer into full-time DevOps. Still in role 2+ years later.",
+      "Code reviews cut post-release bugs ~20%",
     ],
     stack: [
       "Kubernetes",
@@ -284,10 +284,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "cion-data",
     title: "Cion Data",
-    subtitle: "Social enterprise — digital workforce entry in Nairobi",
+    subtitle: "Social enterprise. Digital jobs in Nairobi.",
     domain: "social-impact",
     domainLabel: "Social Impact",
-    period: "2017 – 2019",
+    period: "2017 to 2019",
     featured: false,
     metrics: [
       { value: "17", label: "people placed" },
@@ -295,11 +295,11 @@ export const caseStudies: CaseStudy[] = [
       { value: "Remote", label: "multinational clients" },
     ],
     summary:
-      "Founded a social enterprise in Nairobi helping Kenyans enter the digital workforce — placing 17 people in remote data QA roles for multinational clients at above national average pay.",
+      "Founded a social enterprise in Nairobi. Got 17 people into remote data QA roles for multinational clients. Above national average pay.",
     highlights: [
-      "Created social enterprise assisting Kenyans in entering the digital workforce",
-      "Helped 17 people get remote jobs in Data Quality Assurance for multinational clients",
-      "Improved client workflows and team experiences, increasing productivity and retention",
+      "Social enterprise for digital workforce entry in Kenya",
+      "17 people placed in remote data QA for multinational clients",
+      "Improved client workflows, productivity, and retention",
     ],
     stack: ["Operations", "Remote work", "Data QA", "Team leadership"],
   },

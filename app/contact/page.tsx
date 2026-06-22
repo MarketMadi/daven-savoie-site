@@ -14,8 +14,8 @@ export default function ContactPage() {
           Contact
         </h1>
         <p className="mt-4 text-lg text-muted">
-          Available for remote contract work — legacy modernisation, Kubernetes
-          platforms, CI/CD, and developer tooling.
+          Remote contract work. Legacy modernisation, Kubernetes, CI/CD, dev
+          tooling.
         </p>
 
         <div className="mt-12 space-y-6">

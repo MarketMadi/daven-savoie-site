@@ -2,10 +2,12 @@ export const site = {
   name: "Daven Savoie",
   title: "Senior DevOps Engineer",
   tagline:
-    "I modernise legacy platforms, automate infrastructure, and ship developer tooling — across healthcare, agtech, fintech, and AI.",
+    "I fix legacy infra, automate deployments, and ship dev tools for healthcare, agtech, fintech, and AI.",
+  heroSubtext:
+    "Cut deploy times 80%. Redeployed decade-old healthcare stacks. Solo mainnet launch. Open-source tooling in production.",
   email: "ace.costa@proton.me",
   github: "https://github.com/MarketMadi",
-  location: "Available for remote contract work",
+  location: "Remote contract work",
   stats: [
     { value: "5+", label: "years DevOps" },
     { value: "80%", label: "deploy time cuts" },
@@ -29,8 +31,8 @@ export const site = {
     "Grafana",
   ],
   interests: [
-    "Off-trail running — completed Lewa Marathon 2022 (1,700m elevation, 35°C+, 6h30)",
+    "Off-trail running. Lewa Marathon 2022: 1,700m elevation, 35°C+, 6h30.",
     "Chess and robotics",
-    "STEM education — built a Bluetooth matatu project inspired by Kenya's bus culture",
+    "Built a Bluetooth matatu STEM project inspired by Kenya's bus culture",
   ],
 } as const;

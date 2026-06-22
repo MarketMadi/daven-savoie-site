@@ -1,14 +1,15 @@
 # daven-savoie-site
 
-Personal portfolio for **Daven Savoie** — Senior DevOps Engineer. Achievements grouped by domain, built to land contract clients.
+Personal portfolio for **Daven Savoie**, Senior DevOps Engineer.
 
-**Live:** deploy to Vercel or GitHub Pages (static export enabled).
+**Live:** https://marketmadi.github.io/daven-savoie-site/
 
 ## Stack
 
 - Next.js 16 (App Router, static export)
 - Tailwind CSS 4
 - TypeScript
+- GitHub Pages via Actions
 
 ## Development
 
@@ -18,12 +19,14 @@ npm run dev      # http://localhost:3000
 npm run build    # outputs to out/
 ```
 
+Local dev runs without a base path. Production builds for GitHub Pages set `NEXT_PUBLIC_BASE_PATH=/daven-savoie-site`.
+
 ## Structure
 
 ```
 content/
-  case-studies.ts   # All work — edit here to add projects
-  site.ts           # Name, links, skills, stats
+  case-studies.ts   # All work
+  site.ts           # Name, links, skills
 app/
   page.tsx          # Homepage
   work/             # Work index + case study pages
@@ -31,25 +34,15 @@ app/
   contact/
 ```
 
-## Content rules
-
-- **Named:** Bitnomi, CivKit, Podmonkey, Macrocosmos, FreedomTech, Sonic Labs, Cion Data
-- **Anonymised to sector:** Kure → Healthcare SaaS, AgSpace/Origin Digital → AgTech Platform
-
 ## Deploy
 
-### Vercel
+Push to `main`. The GitHub Actions workflow builds and deploys automatically.
 
-Push to GitHub and import the repo — zero config.
-
-### GitHub Pages
+First-time setup (already done if Pages is live):
 
 ```bash
-npm run build
-# Publish the out/ directory to gh-pages branch or use actions
+gh api repos/MarketMadi/daven-savoie-site/pages -X POST -f build_type=workflow
 ```
-
-Set `basePath` in `next.config.ts` if using a project URL (`username.github.io/repo-name`).
 
 ## License
 

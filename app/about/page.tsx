@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `About ${site.name} — ${site.title}`,
+  description: `About ${site.name}, ${site.title}`,
 };
 
 export default function AboutPage() {
@@ -16,15 +16,14 @@ export default function AboutPage() {
 
         <div className="mt-10 space-y-6 text-lg leading-relaxed text-muted">
           <p>
-            I&apos;m {site.name}, a {site.title.toLowerCase()} with 5+ years
-            building scalable infrastructure and automating complex systems
-            across fintech, healthtech, agtech, and AI.
+            I&apos;m {site.name}, a {site.title.toLowerCase()}. 5+ years
+            building infra and automating systems in fintech, healthtech,
+            agtech, and AI.
           </p>
           <p>
-            I&apos;ve reduced deployment times by 80%, redeployed decade-old
-            healthcare microservices, launched decentralized platforms to
-            mainnet as a solo engineer, and shipped open-source developer tools
-            like{" "}
+            Cut deploy times 80%. Redeployed decade-old healthcare
+            microservices. Launched a decentralized platform to mainnet solo.
+            Shipped open-source tools like{" "}
             <a
               href="https://github.com/MarketMadi/podmonkey"
               className="text-accent underline-offset-2 hover:underline"
@@ -41,8 +40,8 @@ export default function AboutPage() {
             >
               Cion Data
             </a>
-            , a social enterprise in Nairobi that helped 17 people enter remote
-            digital work for multinational clients.
+            , a Nairobi social enterprise that placed 17 people in remote work
+            for multinational clients.
           </p>
           <p>
             I hold a BA in Development Economics &amp; South Asian Studies from
@@ -75,7 +74,7 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub — @MarketMadi
+                GitHub @MarketMadi
               </a>
             </li>
             <li>

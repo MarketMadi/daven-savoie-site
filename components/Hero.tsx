@@ -12,9 +12,7 @@ export function Hero() {
           {site.tagline}
         </h1>
         <p className="animate-fade-up-delay-2 mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-          Proven track record reducing deployment times by 80%, modernising
-          legacy platforms, and implementing secure cloud architectures across
-          fintech, healthtech, agtech, and AI-driven environments.
+          {site.heroSubtext}
         </p>
         <div className="animate-fade-up-delay-3 mt-10 flex flex-wrap gap-4">
           <Link
