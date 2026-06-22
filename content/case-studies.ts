@@ -116,7 +116,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Bitcoin trading API and Flutter mobile wallet",
     domain: "fintech",
     domainLabel: "Fintech & Bitcoin",
-    period: "Jan 2025 to Present",
+    period: "Jan 2025 to Jun 1, 2026",
     featured: true,
     metrics: [
       { value: "API", label: "trading & swaps" },
