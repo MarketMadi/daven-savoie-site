@@ -106,7 +106,33 @@
     }
 
     .offer-detail {
+      margin: 0 0 1rem;
+    }
+
+    .offer-timeline {
       margin: 0 0 1.5rem;
+    }
+
+    .book {
+      display: inline-block;
+      margin-top: 0.25rem;
+      padding: 0.7rem 1.35rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--surface);
+      background: var(--accent);
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+
+    .book:hover {
+      background: #243d33;
+    }
+
+    .book:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
     }
 
     .offer-foot {
@@ -168,8 +194,10 @@
     <section class="offer" aria-labelledby="offer-heading">
       <p id="offer-heading" class="pillar">Get clear. Then automate.</p>
       <p class="offer-lead">A free 15-minute assessment that shows you where time and money are leaking, and what to do about it.</p>
-      <p class="offer-detail">I find the 3 to 7 biggest time sinks in your business and match each one to a tool that fixes it. Within 48 hours, you get a short report with clear next steps. No jargon, no fluff.</p>
+      <p class="offer-detail">I find the 3 to 7 biggest time sinks in your business and match each one to a tool that fixes it.</p>
+      <p class="offer-timeline">Within 48 hours, you get a short report with clear next steps. No jargon, no fluff.</p>
       <p class="offer-foot">Free. No pitch, no obligation.</p>
+      <a class="book" href="https://calendly.com/daps218/book-an-assessment">Book an assessment</a>
     </section>
 
     <footer>
