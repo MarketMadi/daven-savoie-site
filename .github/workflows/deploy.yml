@@ -25,8 +25,10 @@ jobs:
 
       - name: Prepare site artifact
         run: |
-          mkdir _site
+          mkdir -p _site/about _site/styles
           cp index.html CNAME _site/
+          cp about/index.html _site/about/
+          cp styles/site.css _site/styles/
 
       - uses: actions/upload-pages-artifact@v3
         with:
