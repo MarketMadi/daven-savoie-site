@@ -4,7 +4,9 @@ export const site = {
   tagline: "I ship dev tools, automate deployments and fix legacy infra.",
   heroSubtext:
     "Cut deploy times 80%. Redeployed decade-old healthcare stacks. Solo mainnet launch. Open-source tooling in production.",
-  email: "ace.costa@proton.me",
+  email: "daps218@gmail.com",
+  phone: "437 551 9397",
+  phoneTel: "+14375519397",
   github: "https://github.com/MarketMadi",
   location: "Remote contract work",
   stats: [
